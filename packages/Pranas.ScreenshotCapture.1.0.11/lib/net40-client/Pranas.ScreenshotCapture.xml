@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Pranas.ScreenshotCapture</name>
+    </assembly>
+    <members>
+        <member name="T:Pranas.ScreenshotCapture">
+            <summary>
+                ScreenshotCapture
+            </summary>
+        </member>
+        <member name="M:Pranas.ScreenshotCapture.TakeScreenshot(System.Boolean)">
+            <summary>
+                Capture screenshot to Image object
+            </summary>
+            <param name="onlyPrimaryScreen">Create screen only from primary screen</param>
+            <returns></returns>
+        </member>
+        <member name="M:Pranas.ScreenshotCapture.ExecuteCaptureProcess(System.String,System.String,System.Int32)">
+            <summary>
+                Start execute process with parameters
+            </summary>
+            <param name="execModule">Application name</param>
+            <param name="parameters">Command line parameters</param>
+            <param name="screensCounter"></param>
+            <returns>Bytes for destination image</returns>
+        </member>
+        <member name="M:Pranas.ScreenshotCapture.WindowsCapture(System.Boolean)">
+            <summary>
+                Capture screenshot with .NET standard implementation
+            </summary>
+            <param name="onlyPrimaryScreen"></param>
+            <returns>Return bytes of screenshot image</returns>
+        </member>
+        <member name="M:Pranas.ScreenshotCapture.ScreenCapture(System.Windows.Forms.Screen)">
+            <summary>
+                Create screenshot of single display
+            </summary>
+            <param name="screen"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pranas.ScreenshotCapture.CombineBitmap(System.Collections.Generic.ICollection{System.Drawing.Image})">
+            <summary>
+                Combime images collection in one bitmap
+            </summary>
+            <param name="images"></param>
+            <returns>Combined image</returns>
+        </member>
+    </members>
+</doc>
